@@ -24,7 +24,6 @@ public class CocheRepository {
 
     private void load() {
         try {
-            System.out.println("[CocheRepository] load path=" + file.toAbsolutePath());
             if (Files.notExists(file.getParent())) {
                 Files.createDirectories(file.getParent());
             }
@@ -41,7 +40,6 @@ public class CocheRepository {
 
     private void save() {
         try {
-            System.out.println("[CocheRepository] save path=" + file.toAbsolutePath());
             Files.writeString(file, GsonFactory.getGson().toJson(coches, listType));
         } catch (IOException e) {
             System.err.println("Error guardando coches: " + e.getMessage());

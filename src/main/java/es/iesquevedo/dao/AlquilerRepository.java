@@ -24,7 +24,6 @@ public class AlquilerRepository {
 
     private void load() {
         try {
-            System.out.println("[AlquilerRepository] load path=" + file.toAbsolutePath());
             if (Files.notExists(file.getParent())) Files.createDirectories(file.getParent());
             if (Files.notExists(file)) Files.writeString(file, "[]");
             String json = Files.readString(file);
@@ -37,7 +36,6 @@ public class AlquilerRepository {
 
     private void save() {
         try {
-            System.out.println("[AlquilerRepository] save path=" + file.toAbsolutePath());
             Files.writeString(file, GsonFactory.getGson().toJson(alquileres, listType));
         } catch (IOException e) {
             System.err.println("Error guardando alquileres: " + e.getMessage());
