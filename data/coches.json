@@ -1,0 +1,23 @@
+[
+  {
+    "id": "001",
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "matricula": "1234-ABC",
+    "disponible": false
+  },
+  {
+    "id": "002",
+    "marca": "Ford",
+    "modelo": "Fiesta",
+    "matricula": "5678-DEF",
+    "disponible": false
+  },
+  {
+    "id": "003",
+    "marca": "Seat",
+    "modelo": "Ibiza",
+    "matricula": "9012-GHI",
+    "disponible": true
+  }
+]

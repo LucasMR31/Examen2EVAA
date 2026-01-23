@@ -1,0 +1,17 @@
+[
+  {
+    "id": "001",
+    "nombre": "Ana Pérez",
+    "documento": "11111111A"
+  },
+  {
+    "id": "002",
+    "nombre": "Luis García",
+    "documento": "22222222B"
+  },
+  {
+    "id": "003",
+    "nombre": "María López",
+    "documento": "33333333C"
+  }
+]

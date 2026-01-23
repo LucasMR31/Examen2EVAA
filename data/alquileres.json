@@ -1,0 +1,16 @@
+[
+  {
+    "id": "001",
+    "cocheId": "001",
+    "usuarioId": "001",
+    "fechaInicio": "2026-01-18",
+    "fechaFin": "2026-01-22"
+  },
+  {
+    "id": "002",
+    "cocheId": "002",
+    "usuarioId": "002",
+    "fechaInicio": "2026-01-19",
+    "fechaFin": "2026-01-21"
+  }
+]
