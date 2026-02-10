@@ -14,11 +14,12 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class AlquilerRepository {
-    private final Path file = Path.of("data", "alquileres.json");
+    private final Path file;
     private final Type listType = new TypeToken<List<Alquiler>>(){}.getType();
     private List<Alquiler> alquileres = new ArrayList<>();
 
     public AlquilerRepository() {
+        this.file  = Path.of("data", "alquileres.json");
         load();
     }
 
