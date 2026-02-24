@@ -2,11 +2,14 @@ package es.iesquevedo.service;
 
 import es.iesquevedo.modelo.Coche;
 import es.iesquevedo.dao.CocheRepository;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 
 import java.util.List;
 import java.util.Optional;
-
+@ApplicationScoped
 public class CocheService {
+    @Inject
     private final CocheRepository repo;
 
     public CocheService(CocheRepository repo) {

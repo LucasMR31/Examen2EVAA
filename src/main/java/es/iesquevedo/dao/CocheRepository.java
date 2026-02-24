@@ -3,6 +3,7 @@ package es.iesquevedo.dao;
 import com.google.gson.reflect.TypeToken;
 import es.iesquevedo.modelo.Coche;
 import es.iesquevedo.util.GsonFactory;
+import jakarta.enterprise.context.ApplicationScoped;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
+@ApplicationScoped
 public class CocheRepository {
     private final Path file;
     public CocheRepository(Path file, Path file1){

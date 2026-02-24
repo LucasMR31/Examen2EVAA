@@ -2,6 +2,8 @@ package es.iesquevedo.ui;
 
 import es.iesquevedo.dao.CocheRepository;
 import es.iesquevedo.service.CocheService;
+import org.jboss.weld.environment.se.Weld;
+import org.jboss.weld.environment.se.WeldContainer;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -15,6 +17,11 @@ public class Main {
         Path path = Paths.get("coches.txt");
         CocheRepository repo = new CocheRepository();
         CocheService service = new CocheService(repo);
+
+        Weld weld =new Weld();
+        WeldContainer container = weld.initialize();
+
+        CocheService service1 = container.select(CocheService.class).get();
 
         boolean running = true;
         while (running) {
