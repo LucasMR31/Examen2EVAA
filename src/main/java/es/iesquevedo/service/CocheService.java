@@ -9,8 +9,8 @@ import java.util.Optional;
 public class CocheService {
     private final CocheRepository repo;
 
-    public CocheService() {
-        this.repo = new CocheRepository();
+    public CocheService(CocheRepository repo) {
+        this.repo = repo;
     }
 
     public boolean altaCoche(Coche coche) {

@@ -1,5 +1,10 @@
 package es.iesquevedo.ui;
 
+import es.iesquevedo.dao.CocheRepository;
+import es.iesquevedo.service.CocheService;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class Main {
@@ -7,6 +12,10 @@ public class Main {
     private static final ConsoleController controller = new ConsoleController(sc);
 
     public static void main(String[] args) {
+        Path path = Paths.get("coches.txt");
+        CocheRepository repo = new CocheRepository();
+        CocheService service = new CocheService(repo);
+
         boolean running = true;
         while (running) {
             System.out.println("--- Agencia Alquiler Coches ---");

@@ -15,6 +15,9 @@ import java.util.stream.Collectors;
 
 public class CocheRepository {
     private final Path file;
+    public CocheRepository(Path file, Path file1){
+        this.file = file1;
+    }
     private final Type listType = new TypeToken<List<Coche>>(){}.getType();
     private List<Coche> coches = new ArrayList<>();
 

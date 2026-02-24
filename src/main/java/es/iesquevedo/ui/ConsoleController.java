@@ -1,5 +1,6 @@
 package es.iesquevedo.ui;
 
+import es.iesquevedo.dao.CocheRepository;
 import es.iesquevedo.modelo.Alquiler;
 import es.iesquevedo.modelo.Coche;
 import es.iesquevedo.modelo.Usuario;
@@ -20,7 +21,7 @@ public class ConsoleController {
 
     public ConsoleController(Scanner sc) {
         this.sc = sc;
-        this.cocheService = new CocheService();
+        this.cocheService = new CocheService(new CocheRepository());
         this.usuarioService = new UsuarioService();
         this.alquilerService = new AlquilerService();
     }
