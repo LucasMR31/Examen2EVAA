@@ -88,4 +88,7 @@ public class CocheRepository {
             }
         }
     }
+
+    public void findById(int i) {
+    return; }
 }
